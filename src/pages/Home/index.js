@@ -9,8 +9,8 @@ import Chat from './Chat';
 const Home = () => {
 
     const isDesktop = useMediaQuery('(min-width:992px)');
-    const {isExcat} = useRouteMatch();
-    const canRenderSidebar = isDesktop || isExcat;
+    const {isExact} = useRouteMatch();
+    const canRenderSidebar = isDesktop || isExact;
  
     return (
         <RoomsProvider>
